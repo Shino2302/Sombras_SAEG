@@ -4,14 +4,52 @@
              xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
              x:Class="Sombras_SAEG.Sombra">
     <Grid>
-        <StackLayout Orientation="Vertical">
-            <sh:Shadows>
+        <StackLayout Orientation="Vertical"
+                     VerticalOptions="Center"
+                     Spacing="30">
+            <sh:Shadows
+                CornerRadius="50"
+                Shades="{
+                sh:SingleShade Offset='15,20',
+                Opacity=0.7,
+                Color=#1588C6}">
                 <ImageButton WidthRequest="100"
                              HeightRequest="100"
                              HorizontalOptions="Center"
                              VerticalOptions="Center"
-                             BackgroundColor="#0066ff">
-                </ImageButton>
+                             BackgroundColor="#0066ff"
+                             CornerRadius="50"
+                             Source="https://i.ibb.co/kx7CFjS/dratini.png"
+                             Padding="13"/>
+            </sh:Shadows>
+            <sh:Shadows 
+                CornerRadius="15"
+                Shades="{sh:SingleShade Offset='0,10',
+                Opacity=0.7,
+                Color=#ffff66}">
+            <Frame WidthRequest="60"
+                   HeightRequest="60"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   BackgroundColor="#fff800"
+                   CornerRadius="15">
+                <Image Source="https://i.ibb.co/xX7rkp1/pikachu.png"/>
+            </Frame>
+            </sh:Shadows>
+            <sh:Shadows 
+                CornerRadius="15"
+                Shades="{sh:SingleShade Offset='0,8',
+                Opacity=0.7,
+                Color=#ff2d36}">
+                <BoxView
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BackgroundColor="#ff2d36"
+                    CornerRadius="15">
+                    
+                </BoxView>
             </sh:Shadows>
         </StackLayout>
     </Grid>
